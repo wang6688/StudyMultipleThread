@@ -1,0 +1,28 @@
+[FINER]  -Thu Dec 07 23:17:04 CST 2017 :Core.main()ENTRY
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainLaunching thread: 0
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread created : Thread-1
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainLaunching thread: 1
+[FINER]  -Thu Dec 07 23:17:04 CST 2017 :Thread-1.run()ENTRY
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread created : Thread-2
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainLaunching thread: 2
+[FINER]  -Thu Dec 07 23:17:04 CST 2017 :Thread-2.run()ENTRY
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread created : Thread-3
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainLaunching thread: 3
+[FINER]  -Thu Dec 07 23:17:04 CST 2017 :Thread-3.run()ENTRY
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread created : Thread-4
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainLaunching thread: 4
+[FINER]  -Thu Dec 07 23:17:04 CST 2017 :Thread-4.run()ENTRY
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread created : Thread-5
+[INFO]  -Thu Dec 07 23:17:04 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainTen Threads created.Waiting for its finalization
+[FINER]  -Thu Dec 07 23:17:04 CST 2017 :Thread-5.run()ENTRY
+[FINER]  -Thu Dec 07 23:17:06 CST 2017 :Thread-1.run()RETURN {0}
+[INFO]  -Thu Dec 07 23:17:06 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread has finished its execution
+[FINER]  -Thu Dec 07 23:17:06 CST 2017 :Thread-2.run()RETURN {0}
+[INFO]  -Thu Dec 07 23:17:06 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread has finished its execution
+[FINER]  -Thu Dec 07 23:17:06 CST 2017 :Thread-3.run()RETURN {0}
+[FINER]  -Thu Dec 07 23:17:06 CST 2017 :Thread-4.run()RETURN {0}
+[INFO]  -Thu Dec 07 23:17:06 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread has finished its execution
+[FINER]  -Thu Dec 07 23:17:06 CST 2017 :Thread-5.run()RETURN {0}
+[INFO]  -Thu Dec 07 23:17:06 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread has finished its execution
+[INFO]  -Thu Dec 07 23:17:06 CST 2017 :_8TestConcurrentApplications._8_6outputEfficientLogInformation.Main.mainThread has finished its execution
+[FINER]  -Thu Dec 07 23:17:06 CST 2017 :Core.main()RETURN
