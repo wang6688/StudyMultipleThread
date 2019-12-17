@@ -33,7 +33,7 @@ public class ProducerConsumerTest extends MultithreadedTestCase {
         queue.put("Event 2");
         System.out.printf("Thread 3: Inserted two elements\n ");
     }
-
+    @Override
     public void finish(){
         super.finish();
         System.out.printf("Test: End\n");
