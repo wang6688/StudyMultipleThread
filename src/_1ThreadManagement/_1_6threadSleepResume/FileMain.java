@@ -10,12 +10,12 @@ public class FileMain {
         try{
             //调用TimeUnit类的SECONDS属性的sleep()方法，休眠5秒钟
             TimeUnit.SECONDS.sleep(5);
-
+            System.err.println("main:"+thread.getId());
         }catch (InterruptedException e){
             e.printStackTrace();
         }
         //设置中断FileClock线程的标志位
-        //thread.interrupt();
+        thread.interrupt();
 
     }
 }

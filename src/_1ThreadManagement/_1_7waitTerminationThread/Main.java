@@ -16,6 +16,7 @@ public class Main {
         localThread.start();
 
         try{
+            //当一个线程对象的join()方法被调用时，调用它的线程（主线程）将被挂起，知道被调用线程对象(DataSourceThread,NetworkConnectionLoader)完成它的任务。
             networkThread.join();
             localThread.join();
         }catch (InterruptedException e){

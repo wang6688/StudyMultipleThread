@@ -14,9 +14,10 @@ public class CleanerTask extends Thread {
 
     @Override
     public void run() {
+        System.err.println("当前线程是守护线程吗？"+isDaemon());
         while (true){
             Date date = new Date();
-            System.out.println("准备清理队列中的时间了"+date.getTime());
+           // System.out.println("准备清理队列中的时间了"+date.getTime());
 
             clean(date);
 
@@ -37,14 +38,14 @@ public class CleanerTask extends Thread {
         delete = false;
         do{
             Event e = deque.getLast();
-            System.out.println("比较队列中最后一个的事件生成时间"+e.getDate().getTime()+" 和 要清理的当前时间"+date.getTime());
+            //System.out.println("比较队列中最后一个的事件生成时间 和 要清理的当前时间"+(date.getTime()-e.getDate().getTime()));
             difference = date.getTime() -e.getDate().getTime();
-            if(difference >1000){
+            if(difference >10000){
                 System.out.printf("Cleaner: %s\n",e.getEvent());
                 deque.removeLast();
                 delete = true;
             }
-        }while (difference >1000);
+        }while (difference >10000);
         if(delete){
             System.out.printf("Cleaner: Size of the queue: %d\n",deque.size());
         }

@@ -16,6 +16,7 @@ public class PrimeGenerator extends Thread{
             if(isPrime(number)){
                 System.out.printf("Number %d is Prime\n",number);
             }
+            //Thread 类又一个表明线程被终端与否的属性，它存放的是布尔值。线程的interrupt()方法被调用时，这个属性就会被设置为true。
             if (isInterrupted()){
                 System.out.printf("The Prime Generator has been Interrupted\n");
                 return ;

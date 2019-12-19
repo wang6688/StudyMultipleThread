@@ -1,5 +1,8 @@
 package _2ThreadSynchronizedBasis._2_3useNonDependentPropAchiveSynchronization;
 
+/**
+ * 用synchronized 关键字保护代码块时，使用对象作为它的传入参数。JVM保证同一时间只有一个线程能够访问这个对象的代码块(注意：是对象，而不是类)
+ */
 public class Cinema {
     private long vacanciesCinema1;
     private long vacanciesCinema2;

@@ -13,15 +13,15 @@ public class WriterTask implements Runnable {
 
     @Override
     public void run() {
-        for (int i =1; i<10; i++){
+        for (int i =1; i<100; i++){
             Event event = new Event();
             event.setDate(new Date());
             event.setEvent(String.format("The thread %s has generated an event",Thread.currentThread().getId()));
             deque.addFirst(event);
-            System.out.println("线程"+Thread.currentThread().getId()+"于"+System.currentTimeMillis()+"向队列中加入一个事件");
+           // System.out.println("线程"+Thread.currentThread().getId()+"于"+System.currentTimeMillis()+"向队列中加入一个事件");
             try{
                 TimeUnit.SECONDS.sleep(1);
-                System.out.println("休息了一秒");;
+             //   System.out.println("休息了一秒");
             }catch (InterruptedException e){
                 e.printStackTrace();
             }

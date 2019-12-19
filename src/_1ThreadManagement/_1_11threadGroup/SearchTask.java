@@ -27,7 +27,7 @@ public class SearchTask implements  Runnable{
     }
 
     private void doTask() throws InterruptedException{
-        Random random = new Random(new Date().getTime());
+        Random random = new Random(System.currentTimeMillis());
         int value = (int)(random.nextDouble()*100);
         System.out.printf("Thread %s : %d\n",Thread.currentThread().getName(),value);
         TimeUnit.SECONDS.sleep(value);

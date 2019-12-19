@@ -25,7 +25,7 @@ public class Main {
 
         //  创建一个PrintWriter对象，用来把线程的状态演变写入到文件中。
         try{
-            FileWriter file = new FileWriter("c:\\log.txt");
+            FileWriter file = new FileWriter("d:\\log.txt");
             PrintWriter pw = new PrintWriter(file);
             //  把 这10个线程的状态写入文件中。现在的线程状态是New
             for (int i =0; i<10;i++){

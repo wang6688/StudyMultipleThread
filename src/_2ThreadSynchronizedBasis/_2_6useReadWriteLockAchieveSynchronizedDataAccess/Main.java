@@ -1,5 +1,10 @@
 package _2ThreadSynchronizedBasis._2_6useReadWriteLockAchieveSynchronizedDataAccess;
 
+/**
+ * 锁机制最大的改进之一就是ReadWriteLock接口和它的唯一实现类ReentrantReadWriteLock。这个类有两个锁，一个是读操作锁，另一个是写操作锁。
+ * 使用读操作锁时可以允许多个线程同时访问，但是使用写操作锁时只允许一个线程进行。在一个线程执行写操作时，其他线程不能够执行读操作。
+ * 当你获取Lock接口的读锁时，不可以进行修改操作，否则将引起数据不一致的错误。
+ */
 public class Main {
     public static void main(String[] args) {
         PricesInfo pricesInfo = new PricesInfo();

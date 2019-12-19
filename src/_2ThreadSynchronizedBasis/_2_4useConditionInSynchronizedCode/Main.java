@@ -1,15 +1,13 @@
 package _2ThreadSynchronizedBasis._2_4useConditionInSynchronizedCode;
 
 /**
- *  这个范例 的主要部分是数据存储EventStorage类的set()和get()方法。 首先，
- *  set()方法检查存储列表storage是否还有空间，如果已经满了，就调用wait()方法挂起线程并等待空余空间的出现。
- *  其次，当其他线程调用notifyAll()方法时，挂起的线程将被唤醒并且再次检查这个条件。notifyAll()并不保证哪个线程会被唤醒。
- *  这个过程持续进行直到存储列表有空余空间出现，然后生一个生产者将生成一个新的数据并且存入存储列表storage。
+ *  Java 在Object类中提供了wait()/notify()和notifyAll()方法。线程可以在同步代码块中调用wait()方法。
+ *  如果在同步代码块之外调用wait()方法，JVM将抛出IllegalMonitorStateException异常。
+ *  当一个线程调用wait()方法时，JVM将这个线程置入休眠，并且释放控制这个同步代码块的对象，同时允许其他线程执行这个对象控制的其他同步代码块。
+ *  为了唤醒这个线程，必须在这个对象控制的某个同步代码块中调用notify()或者notifyAll()方法。
+
  *
- *  get()方法的行为与之类似。首先，get()方法检查存储列表storage是否还有数据，如果没有，
- *  就调用wait()方法挂起线程并等待数据的出现。其次，当其他线程调用notifyAll()方法时，挂起的线程将被唤醒并且再次检查这个条件。
- *  这个过程持续进行直到存储列表有数据出现。
- *  备注: 必须在while循环中调用wait(),并且不断查询while的条件，直到条件为真的时候才能继续。
+
  */
 public class Main {
     public static void main(String[] args) {

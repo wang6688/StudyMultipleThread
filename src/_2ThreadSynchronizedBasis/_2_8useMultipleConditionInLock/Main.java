@@ -1,6 +1,11 @@
 package _2ThreadSynchronizedBasis._2_8useMultipleConditionInLock;
 
 
+/**
+ * 一个锁可能关联一个或者多个条件，这些条件通过Condition接口声明。
+ * 目的是允许线程获取锁并且哈看等待的某一个条件是否满足，如果不满足就挂起直到某个线程唤醒它们。
+ * Condtion接口提供了挂起线程和唤起线程的机制。
+ */
 public class Main {
     public static void main(String[] args) {
         FileMock mock = new FileMock(100,10);

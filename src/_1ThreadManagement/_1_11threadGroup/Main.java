@@ -3,6 +3,7 @@ package _1ThreadManagement._1_11threadGroup;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Java 提供了ThreadGroup类表示一组线程。线程组可以包含线程对象，也可以包含其他的线程组对象，他是一个树形结构。
  * 线程组类存储了线程对象和关联的线程组对象，并可以访问他们的信息(例如状态),将执行的操作应用到所有成员上(例如中断).
  */
 public class Main {
@@ -10,7 +11,7 @@ public class Main {
         ThreadGroup threadGroup = new ThreadGroup("Searcher");
         Result result = new Result();
         SearchTask searchTask = new SearchTask(result);
-        for (int i =0; i<5; i++){
+        for (int i =0; i<10; i++){
             Thread thread = new Thread(threadGroup,searchTask);
             thread.start();
             try {

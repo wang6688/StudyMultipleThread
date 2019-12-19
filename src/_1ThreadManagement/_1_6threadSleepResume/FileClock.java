@@ -10,9 +10,12 @@ public class FileClock implements  Runnable {
             System.out.printf("%s\n",new Date());
             try {
                 TimeUnit.SECONDS.sleep(1);
+                System.err.println(Thread.currentThread().getId());
             }catch (InterruptedException e){
                 System.out.printf("The FileClock has been interrupted");
+                return;
             }
+
         }
 
     }

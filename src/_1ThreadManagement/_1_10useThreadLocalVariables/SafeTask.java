@@ -18,7 +18,7 @@ public class SafeTask implements  Runnable {
 
     @Override
     public void run() {
-        System.out.printf("Starting Thread: %s :%s\n",Thread.currentThread().getId(),startDate.get());
+      //  System.out.printf("Starting Thread: %s :%s\n",Thread.currentThread().getId(),startDate.get());
         try {
             TimeUnit.SECONDS.sleep((int)Math.rint(Math.random()*10));
         }catch (InterruptedException e){
